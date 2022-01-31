@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Parallax scrolling */
+
+.box1 {
+  height: 250px;
+  width: 100%;
+  background-image: url("images/new3.jpg");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+.box3 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("images/new1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+}
+/*----------------------------------------*/
+
+h1 {
+  margin: 80px 0;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*----------------------------------------*/
+
+/*Logo style */
+
+.fab {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #fff !important;
+}
+
+/*navbar*/
+.nav-item a {
+  color: #fff !important;
+  font-size: 20px;
+}
+
+.nav-item a:hover {
+  color: red;
+}
+/*----------------------------------------*/
+/*Bootstrap container*/
+
+.container-fluid h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------------------------------*/
+/*Coins container*/
+#container {
+  margin-top: 20px;
+}
+
+/*----------------------------------------*/
+/*Coins Toggle switch style*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#label-switch {
+  position: absolute;
+  right: 7%;
+}
+
+/*----------------------------------------*/
+
+.row > div {
+  margin-bottom: 10px;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+}
+
+.coinHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardSwitch {
+  height: 20px;
+}
+.custom-switch .custom-control-label::before {
+  width: 40px !important;
+  height: 18px;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(1.75rem) !important;
+}
+
+.loader {
+  border: 16px solid black;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+}
+
+#coinsModal {
+  display: none;
+}
+#listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*About me*/
+#showAbout {
+  display: none;
+  width: 70%;
+  margin: 50px auto;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border: 3px solid black;
+  padding: 5px;
+  background-color: rgb(206, 199, 199);
+  box-shadow: 2px 5px 10px 10px gray;
+  border-radius: 10px;
+}
+
+.sideBySide {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+#showAbout img {
+  display: flex;
+  flex: 1;
+}
+
+#imgDiv img {
+  display: inline-block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10%;
+}
+
+#showAbout p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  text-indent: 30px;
+  flex: 1;
+  margin-right: 10px;
+  /* text-align: center; */
+}
+
+/*-----------------------------------*/
+#liveReports {
+  display: none;
+}
+
+#showErrorMessage {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+.mainLoader {
+  display: none;
+  margin: 100px auto;
+}
+.chartLoader {
+  display: block;
+  margin: 100px auto;
+}
